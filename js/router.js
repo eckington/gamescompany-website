@@ -1,8 +1,19 @@
 let dataObject = { siteName: 'GamesCompany' }
 
 let fourohfour = [
-  '<h1>404 error! Sorry!</h1>',
-  '<h2>That page wasn\'t found.</h2>'
+  '<div class="container">',
+  '  <h1>404 error! Sorry!</h1>',
+  '  <h2>That page wasn\'t found.</h2>',
+  '</div>'
+];
+
+let routes = [
+  { route: '/', file: 'index' },
+  { route: '/reviews', file: 'reviews' },
+  { route: '/games', file: 'games' },
+  { route: '/games/pc', file: 'games-pc' },
+  { route: '/games/ps4', file: 'games-ps4' },
+  { route: '/games/xbox', file: 'games-xbox' }
 ];
 
 /**
@@ -10,13 +21,14 @@ let fourohfour = [
  * (i.e. index.html/#/test/main renders /tmpl/test--main.tmpl).
  */
 function route() {
-  let path = '';
-  
-  if(window.location.hash.substring(1) == '/') {   // If the path is exactly / then render the index page
-    path = '../tmpl/index.tmpl';
-  } else { // If not, render the page corresponding to the hash URL
-    path = '../tmpl/' + window.location.hash.substring(2).replace(/\//g, '\-\-') + '.tmpl'
-  }
+  // Get the correct route from the list above
+  let url = window.location.hash.substring(1);
+  let routeFile = routes.find(r => r.route == url);
+
+  if(!routeFile) return document.getElementById('app').innerHTML = render(fourohfour.join('\n'));
+
+  // If the route exists, set the path.
+  let path = '../tmpl/' + routeFile.file + '.tmpl';
 
   // XMLHttpRequest allows us to open the tmpl files.
   let req = new XMLHttpRequest();
