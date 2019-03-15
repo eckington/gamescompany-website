@@ -9,7 +9,7 @@ let dataObject = {
 }
 
 let template = document.getElementById('tmpl-home');
-let templateHTML = template.innerHTML;
+let templateHTML = template.innerText;
 let homeHTML = '';
 
 for(let key in dataObject) {
