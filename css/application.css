@@ -1,5 +1,5 @@
 /* General body styling */
-body { margin: 0; font-family: sans-serif }
+body { margin: 0; font-family: 'Montserrat', sans-serif }
 
 /* Container */
 .container { max-width: 1500px; margin: 0 auto }
@@ -8,7 +8,9 @@ body { margin: 0; font-family: sans-serif }
 header { padding: 11px; background: #800000 }
 
 /* Top bar */
-header .topRow { width: 100%; height: 130px }
+header .topRow { width: 100%; height: 130px; display: flex; color: #fff }
+header .topRow img { display: inline }
+header .topRow .tagline { margin: auto 8px; font-size: 24px; font-weight: 300; border-left: 1px solid white; padding-left: 8px; height: 45px; padding-top: 19px; font-style: italic }
 
 /* Divider between top and links */
 header hr { border: 0; border-bottom: 2px solid white; border-radius: 2px; }
@@ -16,7 +18,9 @@ header hr { border: 0; border-bottom: 2px solid white; border-radius: 2px; }
 /* Links */
 header .links .links-list { padding: 0; list-style: none; font-size: 20px; font-weight: bold }
 header .links .links-list li { display: inline; padding-right: 32px }
-header .links .links-list li a { color: #fff; text-decoration: none }
+header .links .links-list li:last-child { padding-right: 0 }
+header .links .links-list a { color: #fff; text-decoration: none; text-transform: uppercase }
+header .links .links-list a.search-link { float: right }
 
 /* Footer */
 footer { padding: 11px; background: #212121; color: #fff; font-weight: bold }
