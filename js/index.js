@@ -40,6 +40,9 @@ function route() {
   }
 }
 
+// Make sure the user is on the hash router
+if(!window.location.hash.startsWith('#/')) window.location.replace('#/')
+
 // Route as soon as the page is loaded
 route();
 
