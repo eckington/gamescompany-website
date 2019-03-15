@@ -1,20 +1,22 @@
 /* General body styling */
 body { margin: 0; font-family: sans-serif }
 
-/* Header bar styling */
+/* Container */
+.container { max-width: 1500px; margin: 0 auto }
+
+/* Header bar */
 header { padding: 11px; background: #800000 }
-header .inner { max-width: 1500px; margin: 0 auto }
 
 /* Top bar */
-header .inner .topRow { width: 100%; height: 130px }
+header .topRow { width: 100%; height: 130px }
 
 /* Divider between top and links */
-header .inner hr { border: 0; border-bottom: 2px solid white; border-radius: 2px; }
+header hr { border: 0; border-bottom: 2px solid white; border-radius: 2px; }
 
 /* Links */
-header .inner .links .links-list { padding: 0; list-style: none; font-size: 20px; font-weight: bold }
-header .inner .links .links-list li { display: inline; padding-right: 32px }
-header .inner .links .links-list li a { color: #fff; text-decoration: none }
+header .links .links-list { padding: 0; list-style: none; font-size: 20px; font-weight: bold }
+header .links .links-list li { display: inline; padding-right: 32px }
+header .links .links-list li a { color: #fff; text-decoration: none }
 
-/* Container */
-main .container { max-width: 1500px; margin: 0 auto }
+/* Footer */
+footer { padding: 11px; background: #212121; color: #fff; font-weight: bold }
