@@ -10,10 +10,4 @@ let dataObject = {
 
 let template = document.getElementById('tmpl-home');
 let templateHTML = template.innerText;
-let homeHTML = '';
-
-for(let key in dataObject) {
-    listHTML = templateHTML.replace(/{{siteName}}/g, dataObject.id);
-}
-
-document.getElementById('application_main').innerHTML = homeHTML;
+document.textContent.replace(/{{siteName}}/g, dataObject.siteName);
