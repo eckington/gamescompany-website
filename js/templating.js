@@ -1,3 +1,12 @@
+let gamesListTemplate = [
+  '<div class="game">',
+  '  <img src="{{image}}">',
+  '  <span class="game--name">{{name}}</span>',
+  '  <span class="game--publisher">By <i>{{publisher}}</i></span>',
+  '  <a href="{{link}}" class="button">See Reviews</a>',
+  '</div>'
+].join('\n');
+
 /**
  * Generates HTML markup from a template and data object.
  *
@@ -8,10 +17,8 @@
 function render(template, data) {
   // Replace any text in the format '{{anything}}' with a variable found in the `data` parameter
   return template.replace(/\{\{\s?(\w+)\s?\}\}/g, (match, variable) => {
-    // Check for any nested options (i.e. '{{ anything.anyNestedThing }}')
-    return variable.split('.').reduce((previous, current) => {
-      return previous[current];
-    }, data) || '';
+    if(variable === 'pcGames') return listRender(gamesListTemplate, data.games.pc);
+    return data[variable] || '';
   });
 }
 
@@ -29,5 +36,5 @@ function listRender(template, data) {
       render(template, d)
     );
   });
-  return list;
+  return list.join('\n');
 }

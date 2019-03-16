@@ -1,4 +1,56 @@
-let dataObject = { siteName: 'GamesCompany' }
+let dataObject = {
+  siteName: 'GamesCompany',
+  xboxGames: 'Hello',
+  pcGames: 'PC',
+  ps4Games: 'PS4',
+  games: {
+    pc: [
+      {
+        name: 'Just Cause 4',
+        image: 'https://via.placeholder.com/130x200.png',
+        price: 34.55,
+        publisher: 'Avalanche Studios',
+        market: 'steam',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      },
+      {
+        name: 'PC Game',
+        image: 'https://via.placeholder.com/130x200.png',
+        link: '#'
+      }
+    ]
+  }
+}
 
 let fourohfour = [
   '<div class="container">',
@@ -13,7 +65,8 @@ let routes = [
   { route: '/games', file: 'games' },
   { route: '/games/pc', file: 'games-pc' },
   { route: '/games/ps4', file: 'games-ps4' },
-  { route: '/games/xbox', file: 'games-xbox' }
+  { route: '/games/xbox', file: 'games-xbox' },
+  { route: '/search', file: 'search' }
 ];
 
 /**
