@@ -1,3 +1,6 @@
+/**
+ * gamesListTemplate is to be re-used on all games listing pages
+ */
 let gamesListTemplate = [
   '<div class="game">',
   '  <img src="{{image}}">',
@@ -18,6 +21,8 @@ function render(template, data) {
   // Replace any text in the format '{{anything}}' with a variable found in the `data` parameter
   return template.replace(/\{\{\s?(\w+)\s?\}\}/g, (match, variable) => {
     if(variable === 'pcGames') return listRender(gamesListTemplate, data.games.pc);
+    if(variable === 'ps4Games') return listRender(gamesListTemplate, data.games.ps4);
+    if(variable === 'xboxGames') return listRender(gamesListTemplate, data.games.xbox);
     return data[variable] || '';
   });
 }
