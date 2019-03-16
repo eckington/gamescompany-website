@@ -7,7 +7,7 @@ let dataObject = {
     pc: [
       {
         name: 'Just Cause 4',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         price: 34.55,
         publisher: 'Avalanche Studios',
         market: 'steam',
@@ -15,37 +15,37 @@ let dataObject = {
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       },
       {
         name: 'PC Game',
-        image: 'https://via.placeholder.com/130x200.png',
+        image: 'https://via.placeholder.com/150x200.png',
         link: '#'
       }
     ]

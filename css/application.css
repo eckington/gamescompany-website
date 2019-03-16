@@ -25,3 +25,22 @@ header .links .links-list a.search-link { float: right }
 
 /* Footer */
 footer { padding: 11px; background: #212121; color: #fff; font-weight: bold }
+
+/* Games List Styling */
+.gamesList { padding-top: 24px; padding-bottom: 24px }
+.gamesList .heading { padding: 24px 32px; line-height: 32px }
+.gamesList .heading #listTitle { font-size: 20px; font-weight: bold; display: block }
+.gamesList .heading #listSubtitle { font-size: 20px }
+
+.gamesList .list { display: flex; margin-top: 16px; flex-wrap: wrap; }
+.gamesList .game { display: block; flex-basis: 25%; text-align: center; margin-bottom: 16px; }
+.gamesList .game .game--name { display: block; font-weight: bold; display: block; }
+.gamesList .game .button { margin: 0 auto; display: block; max-width: 100px; color: #fff; text-decoration: none; margin-top: 8px }
+
+/* Individual Colours */
+.gamesList#pc-games .heading { background: #333; color: #fff }
+.gamesList#ps4-games .heading { background: #003791; color: #fff }
+.gamesList#xbox-games .heading { background: #52b043; color: #fff }
+
+/* Button Styling */
+.button { min-width: 100px; padding: 16px; background: #800000; margin-top: 32px }
