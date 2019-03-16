@@ -17,10 +17,12 @@ header .topRow .tagline { margin: auto 8px; font-size: 24px; font-weight: 300; b
 header hr { border: 0; border-bottom: 2px solid white; border-radius: 2px; }
 
 /* Links */
-header .links .links-list { padding: 0; list-style: none; font-size: 20px; font-weight: bold }
+header .links { font-size: 20px; color: #fff; font-weight: bold; text-transform: uppercase }
+header .links .menu-icon { display: none }
+header .links .links-list { padding: 0; list-style: none }
 header .links .links-list li { display: inline; padding-right: 32px }
 header .links .links-list li:last-child { padding-right: 0 }
-header .links .links-list a { color: #fff; text-decoration: none; text-transform: uppercase }
+header .links .links-list a { color: #fff; text-decoration: none }
 header .links .links-list a.search-link { float: right }
 
 /* Footer */
@@ -44,3 +46,30 @@ footer { padding: 11px; background: #212121; color: #fff; font-weight: bold }
 
 /* Button Styling */
 .button { min-width: 100px; padding: 16px; background: #800000; margin-top: 32px }
+
+/* Responsiveness */
+/* Tablet */
+@media screen and (max-width: 1000px) { .gamesList { padding-top: 0 } }
+@media screen and (max-width: 900px) {
+  header { padding: 16px; }
+  header hr { display: none }
+  header .links { margin-top: 24px; margin-bottom: 11px }
+  header .links .menu-icon { display: inline }
+  header .links .links-list { display: none }
+  .gamesList .game { flex-basis: 33% }
+}
+@media screen and (max-width: 780px) {
+  header .topRow .tagline { border: none; margin: 17px auto }
+}
+
+/* Large Phone */
+@media screen and (max-width: 540px) {
+  header .topRow .tagline { margin: 0 auto }
+  .gamesList .game { flex-basis: 50% }
+}
+
+/* Phone */
+@media screen and (max-width: 450px) {
+  header .topRow { display: block }
+  .gamesList .game { flex-basis: 100% }
+}
