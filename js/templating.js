@@ -10,6 +10,7 @@ let gamesListTemplate = [
   '</div>'
 ].join('\n');
 
+
 /**
  * Generates HTML markup from a template and data object.
  *
