@@ -7,8 +7,9 @@ import Index from './views/Index';
 import PCGames from './views/PCGames';
 import PS4Games from './views/PS4Games';
 import XboxGames from './views/XboxGames';
-import './index.css';
 import Search from './views/Search';
+
+import './index.css';
 
 class App extends Component{
   render(){
