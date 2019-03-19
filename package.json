@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "Create a multi-page website",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --mode development"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eckington/youngh-imedia-r085.git"
   },
-  "author": "",
+  "author": "Hayden Young <youngh@eckington.derbyshire.sch.uk>",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/eckington/youngh-imedia-r085/issues"
@@ -29,6 +31,8 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-hot-loader": "^4.8.0",

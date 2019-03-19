@@ -1,5 +1,11 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const htmlPlugin = new HtmlWebpackPlugin({
+  template: "./public/index.html",
+  filename: "./index.html"
+})
 
 module.exports = {
   entry: "./src/index.js",
@@ -35,5 +41,5 @@ module.exports = {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [new webpack.HotModuleReplacementPlugin(), htmlPlugin]
 };
