@@ -37,6 +37,8 @@ footer { padding: 11px; background: #212121; color: #fff; font-weight: bold }
 .gamesList .list { display: flex; margin-top: 16px; flex-wrap: wrap; }
 .gamesList .game { display: block; flex-basis: 25%; text-align: center; margin-bottom: 16px; }
 .gamesList .game .game--name { display: block; font-weight: bold; display: block; }
+.gamesList .game .game--publisher { display: block; display: block; }
+.gamesList .game .game--price { display: block; display: block; }
 .gamesList .game .button { margin: 0 auto; display: block; max-width: 100px; color: #fff; text-decoration: none; margin-top: 8px }
 
 /* Individual Colours */

@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/Header';
+import Footer from './components/Footer';
+import Index from './views/Index';
+import PCGames from './views/PCGames';
+import PS4Games from './views/PS4Games';
+import XboxGames from './views/XboxGames';
 import './index.css';
+import Search from './views/Search';
 
 class App extends Component{
   render(){
     return(
-      <div className="container">
-        <h1> Hello, World! </h1>
-      </div>
+      <Router>
+        <Navbar />
+
+        <Route exact path="/" component={Index} />
+        <Route path="/games/pc" component={PCGames} />
+        <Route path="/games/ps4" component={PS4Games} />
+        <Route path="/games/xbox" component={XboxGames} />
+        <Route path="/reviews" component={XboxGames} />
+        <Route path="/search" component={Search} />
+        <Route component={XboxGames} />
+
+        <Footer />
+      </Router>
     );
   }
 }
