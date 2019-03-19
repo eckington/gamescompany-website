@@ -8,7 +8,7 @@ class Navbar extends Component {
         <div className="container">
           <div className="topRow">
             <a href="#/">
-              <img src="https://via.placeholder.com/250x130.png" alt="Logo" />
+              <img src="/logo.png" alt="Logo" />
             </a>
             <p className="tagline">Reviews, comments &amp; nasty people!</p>
           </div>
