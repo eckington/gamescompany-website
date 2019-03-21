@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GameListItem from '../components/games/ListItem';
+import GamesListItem from '../components/games/ListItem';
 import uuidv4 from '../util/uuid';
 import * as gamesList from '../data/games.json';
 
@@ -27,8 +27,8 @@ export default class PS4Games extends Component {
           <span id="listSubtitle">Jump in.</span>
         </div>
         <div className="list">
-          {this.state.games.map(game => {
-            return (<GameListItem key={game.uuid} name={game.name} imageURL={game.imageURL} publisher={game.publisher} buttonURL={game.url} price={game.price} />);
+          {this.state.games.map((game, key) => {
+            return (<GamesListItem key={key} name={game.name} imageURL={game.imageURL} publisher={game.publisher} shortName={game.shortName} price={game.price} />);
           })}
         </div>
       </div>

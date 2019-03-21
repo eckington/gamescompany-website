@@ -1,4 +1,4 @@
-import Fuse from "fuse.js";
+import Fuse from 'fuse.js';
 
 export default function fuzzy(array, keys, term) {
   const options = {
@@ -15,14 +15,12 @@ export default function fuzzy(array, keys, term) {
   return fuse.search(term);
 }
 
-export function parseSearch(search, variable) {
-  var query = search.substring(1);
-  var vars = query.split("&");
-  for (var i = 0; i < vars.length; i++) {
-    var pair = vars[i].split("=");
-    if (decodeURIComponent(pair[0]) === variable) {
-      return decodeURIComponent(pair[1]);
-    }
+export function parseSearch(queryString) {
+  var query = {};
+  var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+  for (var i = 0; i < pairs.length; i++) {
+      var pair = pairs[i].split('=');
+      query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
   }
-  return false;
+  return query;
 }

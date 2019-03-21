@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './logo.png';
 
 class Navbar extends Component {
+  componentDidMount() {
+    let logo = new Image();
+    logo.src = Logo;
+
+    document.getElementById('header--logo')
+      .appendChild(logo);
+  }
+
   render() {
     return(
       <header>
         <div className="container">
           <div className="topRow">
-            <a href="#/">
-              <img src="/logo.png" alt="Logo" />
-            </a>
+            <Link to="/" id="header--logo"></Link>
             <p className="tagline">Reviews, comments &amp; nasty people!</p>
           </div>
           <hr/>

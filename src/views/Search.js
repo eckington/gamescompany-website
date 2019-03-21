@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import GamesListItem from "../components/games/ListItem";
-import games from "../data/games.json";
-import fuzzy, { parseSearch } from "../util/search";
+import React, { Component } from 'react';
+import GamesListItem from '../components/games/ListItem';
+import games from '../data/games.json';
+import fuzzy, { parseSearch } from '../util/search';
 
 export default class Search extends Component {
   constructor(...args) {
@@ -12,26 +12,27 @@ export default class Search extends Component {
       games: games,
       reviews: [],
       posts: [],
-      searchTerm: parseSearch(this.props.location.search, "q")
-        ? parseSearch(this.props.location.search, "q")
-        : ""
+      searchTerm: parseSearch(this.props.location.search).q ? parseSearch(this.props.location.search).q : ''
     };
     this.submit = this.submit.bind(this);
   }
 
   componentDidMount() {
+    let searchText = parseSearch(this.props.location.search)['q'];
+    let gamesFound = searchText ? fuzzy(
+      games,
+      ["name", "publisher", "price", "stores"],
+      searchText
+    ) : [];
+    this.setState({ found: gamesFound });
     this.setState({ games: games, loaded: true });
   }
 
   submit(ev) {
     ev.preventDefault();
     let searchText = document.getElementsByName("search").item(0).value;
-    let gamesFound = fuzzy(
-      games,
-      ["name", "publisher", "price", "stores"],
-      searchText
-    );
-    this.setState({ found: gamesFound });
+    window.location.replace(`/#/search?q=${searchText}`);
+    window.location.reload();
   }
 
   render() {
@@ -44,7 +45,7 @@ export default class Search extends Component {
       );
     } else {
       return (
-        <div className="searchPage">
+        <div className="searchPage container gamesList">
           <form onSubmit={this.submit}>
             <input
               name="search"
@@ -62,7 +63,7 @@ export default class Search extends Component {
                   name={game.name}
                   imageURL={game.imageURL}
                   publisher={game.publisher}
-                  buttonURL={game.url}
+                  shortName={game.shortName}
                   price={game.price}
                 />
               );

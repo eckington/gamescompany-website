@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-import { hot } from "react-hot-loader";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/Header";
-import Footer from "./components/Footer";
-import Index from "./views/Index";
-import PCGames from "./views/PCGames";
-import PS4Games from "./views/PS4Games";
-import XboxGames from "./views/XboxGames";
-import Search from "./views/Search";
-
-import "./index.css";
+import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Header';
+import Footer from './components/Footer';
+import Index from './views/Index';
+import PCGames from './views/PCGames';
+import PS4Games from './views/PS4Games';
+import XboxGames from './views/XboxGames';
+import Search from './views/Search';
+import Reviews from './views/Reviews';
+import Game from './views/Game';
+import './index.css';
 
 class App extends Component {
   render() {
@@ -22,8 +23,9 @@ class App extends Component {
           <Route path="/games/pc" component={PCGames} />
           <Route path="/games/ps4" component={PS4Games} />
           <Route path="/games/xbox" component={XboxGames} />
-          <Route path="/reviews" component={XboxGames} />
+          <Route path="/reviews" component={Reviews} />
           <Route path="/search" component={Search} />
+          <Route path="/game/:shortName" component={Game} />
           <Route component={FourOhFour} />
         </Switch>
 
