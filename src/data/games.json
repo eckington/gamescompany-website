@@ -6,47 +6,60 @@
     "imageURL" : "https://www.mobygames.com/images/covers/l/538006-apex-legends-xbox-one-front-cover.jpg",
     "price"    : "Free",
     "stores"   : ["origin", "xbox", "ps4"],
-    "reviews"  : [
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      },
-      {
-        "username": "haydennyyy",
-        "subject" : "Very good game!",
-        "content" : "I love this game so much, I think it's awesome and I think that Respawn can really go places with this."
-      }
-    ]
+    "reviews"  : []
+  },
+  {
+    "name"     : "Spider-Man",
+    "imageURL" : "https://i.pinimg.com/originals/14/e2/fc/14e2fc8f881a66aeccef812fa28bb1c0.png",
+    "price"    : "£33.98 (Amazon UK)",
+    "publisher": "Insomniac Games",
+    "shortName": "spiderman",
+    "stores"   : ["ps4"],
+    "reviews"  : []
+  },
+  {
+    "name"     : "Days Gone",
+    "shortName": "days-gone",
+    "publisher": "",
+    "imageURL" : "https://d8mkdcmng3.imgix.net/e965/pc-and-video-games-games-ps4-days-gone-with-preorder-bonus-dlc.png?auto=format&bg=0FFF&fit=fill&h=600&q=100&w=600&s=3bc7511a6d8b06c005dce57c3e35f2a0",
+    "price"    : "£59.99 (Amazon UK)",
+    "stores"   : ["ps4"],
+    "reviews"  : []
+  },
+  {
+    "name"     : "The Last of Us Part II",
+    "shortName": "last-of-us-2",
+    "publisher": "Naughty Dog",
+    "imageURL" : "https://i.imgur.com/AFtbji2.jpg",
+    "price"    : "£49.85",
+    "stores"   : ["ps4"],
+    "reviews"  : []
+  },
+  {
+    "name"     : "Tom Clancy's The Division 2",
+    "shortName": "the-division-2",
+    "publisher": "Ubisoft",
+    "imageURL" : "https://i.pinimg.com/originals/2f/4c/b3/2f4cb334257a6a11cac90aa16cdd68dd.jpg",
+    "price"    : "£59.99",
+    "stores"   : ["uplay", "ps4", "xbox"],
+    "reviews"  : []
+  },
+  {
+    "name"     : "Anthem",
+    "shortName": "anthem",
+    "publisher": "BioWare",
+    "imageURL" : "https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Cover_Art_of_Anthem.jpg/220px-Cover_Art_of_Anthem.jpg",
+    "price"    : "£49.99",
+    "stores"   : ["origin", "ps4", "xbox"],
+    "reviews"  : []
+  },
+  {
+    "name"     : "Cuphead",
+    "shortName": "cuphead",
+    "publisher": "Studio MDHR",
+    "imageURL" : "https://www.mobygames.com/images/covers/l/429819-cuphead-windows-apps-front-cover.jpg",
+    "price"    : "£16.74",
+    "stores"   : ["steam", "ms-store", "xbox"],
+    "reviews"  : []
   }
 ]

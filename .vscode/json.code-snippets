@@ -1,0 +1,17 @@
+{
+  "Game_info": {
+    "prefix": "game",
+    "body": [
+      "{",
+      "  \"name\"     : \"$1\",",
+      "  \"shortName\": \"$2\",",
+      "  \"publisher\": \"$3\",",
+      "  \"imageURL\" : \"$4\",",
+      "  \"price\"    : \"$5\",",
+      "  \"stores\"   : [],",
+      "  \"reviews\"  : []",
+      "}"
+    ],
+    "description": "description"
+  }
+}
