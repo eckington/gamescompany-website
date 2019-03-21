@@ -177,11 +177,8 @@ footer {
     margin-top: 24px;
     margin-bottom: 11px;
   }
-  header .links .menu-icon {
-    display: inline;
-  }
   header .links .links-list {
-    display: none;
+    overflow: scroll;
   }
   .gamesList .game {
     flex-basis: 33%;
@@ -197,7 +194,7 @@ footer {
 /* Large Phone */
 @media screen and (max-width: 540px) {
   header .topRow .tagline {
-    margin: 0 auto;
+    display: none;
   }
   .gamesList .game {
     flex-basis: 50%;

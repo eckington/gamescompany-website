@@ -3,12 +3,21 @@ import { Link } from 'react-router-dom';
 import Logo from './logo.png';
 
 class Navbar extends Component {
+  constructor(...params) {
+    super(...params);
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
   componentDidMount() {
     let logo = new Image();
     logo.src = Logo;
 
     document.getElementById('header--logo')
       .appendChild(logo);
+  }
+
+  toggleMenu(ev) {
+    document.getElementById('links-list').classList.add('unhide');
   }
 
   render() {
@@ -21,8 +30,8 @@ class Navbar extends Component {
           </div>
           <hr/>
           <div className="links">
-            <span className="menu-icon">Menu</span>
-            <ul className="links-list">
+            {/* <a className="menu-icon" onClick={this.toggleMenu}>Menu</a> */}
+            <ul className="links-list" id="links-list">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/games/pc">PC Games</Link></li>
               <li><Link to="/games/ps4">PS4 Games</Link></li>
