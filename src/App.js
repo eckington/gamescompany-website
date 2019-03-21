@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import { hot } from 'react-hot-loader';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Header';
-import Footer from './components/Footer';
-import Index from './views/Index';
-import PCGames from './views/PCGames';
-import PS4Games from './views/PS4Games';
-import XboxGames from './views/XboxGames';
-import Search from './views/Search';
+import React, { Component } from "react";
+import { hot } from "react-hot-loader";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Header";
+import Footer from "./components/Footer";
+import Index from "./views/Index";
+import PCGames from "./views/PCGames";
+import PS4Games from "./views/PS4Games";
+import XboxGames from "./views/XboxGames";
+import Search from "./views/Search";
 
-import './index.css';
+import "./index.css";
 
-class App extends Component{
-  render(){
-    return(
+class App extends Component {
+  render() {
+    return (
       <Router>
         <Navbar />
 
@@ -34,9 +34,10 @@ class App extends Component{
 }
 
 const FourOhFour = ({ location }) => (
-  <div className="container">
-    <h3>No match for <code>{location.pathname}</code></h3>
+  <div className="container" style={{ textAlign: "center" }}>
+    <h3>404.</h3>
+    <h4>That's an error.</h4>
   </div>
-)
+);
 
 export default hot(module)(App);
