@@ -10,8 +10,6 @@ export default class Search extends Component {
       loaded: false,
       found: [],
       games: games,
-      reviews: [],
-      posts: [],
       searchTerm: parseSearch(this.props.location.search).q ? parseSearch(this.props.location.search).q : ''
     };
     this.submit = this.submit.bind(this);
@@ -53,7 +51,7 @@ export default class Search extends Component {
               type="text"
               defaultValue={this.state.searchTerm}
             />
-            <input name="submit" value="Search" type="submit" />
+            <input name="submit" value="Search" className="button" type="submit" />
           </form>
           <div className="list">
             {this.state.found.map((game, key) => {

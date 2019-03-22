@@ -8,6 +8,16 @@ or anything similar. But, for convenience, I have included a Docker container (s
 You can build it with `docker build -t imedia-r085:master .`, then run it with
 `docker run -d -p 5000:80 imedia-r085:master`. You can then access it on port 5000.
 
+## Table of Contents
+- [Progress](#progress)
+- [Client Brief](#client-brief)
+- [Learning Objectives](#learning-objectives)
+  - [LO1](#lo1)
+  - [LO2](#lo2)
+  - [LO3](#lo3)
+  - [LO4](#lo4)
+  - [LO5](#lo5)
+
 ## Progress
 
 See the [projects](https://github.com/eckington/youngh-imedia-r085/projects/1) page.
@@ -18,7 +28,8 @@ See the [projects](https://github.com/eckington/youngh-imedia-r085/projects/1) p
 
 ## Learning Objectives
 
-### LO1: Understand the properties and features of multipage websites
+### LO1
+**Understand the properties and features of multipage websites**
 
 Learners must be taught:
 
@@ -34,11 +45,12 @@ Learners must be taught:
   - Wi-fi (e.g. Private local area networks, public hotspots)
   - Wireless broadband (e.g. 3G, HSDPA, 3GPP, LTE)
 
-### LO2: Be able to plan a multipage website
+### LO2
+**Be able to plan a multipage website**
 
 Learners must be taught how to:
 
-- Interpret client requirements for a multipage website (e.g. to inform, 
+- Interpret client requirements for a multipage website (e.g. to inform,
   entertain, promote, or sell products and/or services), based on a specific
   brief (e.g by client discussion, reviewing a written brief, or specification)
 - Understand target audience requirements for a multipage website
@@ -67,15 +79,18 @@ Learners must be taught:
   websites (e.g. images, graphics, corporate logos, music and video clips),
   whether sourced or created.
 
-### LO3: xyz
+### LO3
+**xyz**
 
 > TODO: Add content here
 
-### LO4: xyz
+### LO4
+**xyz**
 
 > TODO: Add content here
 
-### LO5: xyz
+### LO5
+**xyz**
 
 > TODO: Add content here
 

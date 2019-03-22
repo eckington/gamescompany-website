@@ -2,8 +2,8 @@ import Fuse from 'fuse.js';
 
 export default function fuzzy(array, keys, term) {
   const options = {
-    shouldSort: false,
-    threshold: 0.6,
+    shouldSort: true,
+    threshold: 0.5,
     location: 0,
     distance: 100,
     maxPatternLength: 32,

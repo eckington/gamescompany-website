@@ -118,14 +118,11 @@ footer {
 .gamesList .game .game--name {
   display: block;
   font-weight: bold;
-  display: block;
 }
 .gamesList .game .game--publisher {
   display: block;
-  display: block;
 }
 .gamesList .game .game--price {
-  display: block;
   display: block;
 }
 .gamesList .game .button {
@@ -135,6 +132,21 @@ footer {
   color: #fff;
   text-decoration: none;
   margin-top: 8px;
+}
+
+/* Search Page */
+.searchPage { padding-top: 16px }
+.searchPage form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.searchPage form input {
+  padding: 16px;
+  margin-left: 11px
+}
+.searchPage form input[type="submit"] {
+  border: none;
+  color: white;
 }
 
 /* Individual Colours */
@@ -164,6 +176,9 @@ footer {
 @media screen and (max-width: 1440px) {
   .gamesList {
     padding-top: 0;
+  }
+  .searchPage {
+    padding-top: 16px
   }
 }
 @media screen and (max-width: 900px) {
