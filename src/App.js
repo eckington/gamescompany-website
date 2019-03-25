@@ -11,6 +11,7 @@ import Search from './views/Search';
 import PostList from './views/PostList';
 import Game from './views/Game';
 import './index.css';
+import Post from './views/Post';
 
 class App extends Component {
   render() {
@@ -31,6 +32,12 @@ class App extends Component {
           />
           <Route path="/search" component={Search} />
           <Route path="/game/:shortName" component={Game} />
+          <Route path="/post/:shortName" component={
+            (props) => <Post {...props} type="review" />
+          } />
+          <Route path="/post/:shortName" component={
+            (props) => <Post {...props} type="review" />
+          } />
           <Route component={FourOhFour} />
         </Switch>
 
