@@ -8,7 +8,7 @@ import PCGames from './views/PCGames';
 import PS4Games from './views/PS4Games';
 import XboxGames from './views/XboxGames';
 import Search from './views/Search';
-import Reviews from './views/Reviews';
+import PostList from './views/PostList';
 import Game from './views/Game';
 import './index.css';
 
@@ -23,7 +23,12 @@ class App extends Component {
           <Route path="/games/pc" component={PCGames} />
           <Route path="/games/ps4" component={PS4Games} />
           <Route path="/games/xbox" component={XboxGames} />
-          <Route path="/reviews" component={Reviews} />
+          <Route
+            path="/reviews"
+            component={
+              (props) => <PostList {...props} type="reviews" />
+            }
+          />
           <Route path="/search" component={Search} />
           <Route path="/game/:shortName" component={Game} />
           <Route component={FourOhFour} />
