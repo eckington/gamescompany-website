@@ -134,6 +134,16 @@ footer {
   margin-top: 8px;
 }
 
+/* Reviews List */
+.articleListing {
+  background: #eaeaea;
+  padding: 1em;
+  border-radius: 16px;
+}
+.articleListing img {
+  max-width: 200px;
+}
+
 /* Search Page */
 .searchPage { padding-top: 16px }
 .searchPage form {
