@@ -136,12 +136,27 @@ footer {
 
 /* Reviews List */
 .articleListing {
-  background: #eaeaea;
-  padding: 1em;
-  border-radius: 16px;
+  padding: 1em 0;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 16px;
+  padding: 48px 0;
+  border-bottom: 2px solid #aaa
+}
+.articleListing:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 .articleListing img {
-  max-width: 200px;
+  grid-column: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+.articleListing .articleMeta {
+  display: inline;
+}
+.articleListing .articleMeta h1 {
+  margin: 0;
 }
 
 /* Search Page */
@@ -181,8 +196,44 @@ footer {
   margin-top: 16px;
 }
 
+/* Post Styling */
+.post {
+  padding: 1rem;
+  margin-top: 350px;
+}
+.post .mast {
+  margin: -1rem;
+}
+.post .content {
+  border-radius: 16px;
+  max-width: 600px;
+  padding: 25px;
+  margin: 0 auto;
+  line-height: 28px;
+  background: white;
+}
+.post .content h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: bolder;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+.post .content h1 .lastword {
+  color: var(--color-primary)
+}
+.post .content p {
+  font-size: 14px;
+}
+.post .content p.author {
+  font-size: 12px;
+  color: var(--color-primary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* Page Title Styling */
-.sm-title { position: relative; margin-top: 0 }
+.sm-title { position: relative; margin: 0 }
 .sm-title span {
   font-size: 14px;
   font-weight: bold;
