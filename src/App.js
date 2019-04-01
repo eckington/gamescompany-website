@@ -31,10 +31,6 @@ class App extends Component {
             }
           />
           <Route path="/search" component={Search} />
-          <Route path="/game/:shortName" component={Game} />
-          <Route path="/post/:shortName" component={
-            (props) => <Post {...props} type="post" />
-          } />
           <Route path="/review/:shortName" component={
             (props) => <Post {...props} type="review" />
           } />
