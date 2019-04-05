@@ -1,47 +1,47 @@
-const path = require("path");
-const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlPlugin = new HtmlWebpackPlugin({
-  template: "./public/index.html",
-  filename: "./index.html"
-})
+  template: './public/index.html',
+  filename: './index.html'
+});
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: "development",
+  entry: './src/index.js',
+  mode: 'development',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
-        loader: "babel-loader",
-        options: { presets: ["@babel/env"] }
+        loader: 'babel-loader',
+        options: { presets: ['@babel/env'] }
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        use: ['file-loader']
       },
       {
         test: /\.(js|jsx)?$/,
         include: /node_modules/,
-        use: ["react-hot-loader/webpack"]
+        use: ['react-hot-loader/webpack']
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: { extensions: ['*', '.js', '.jsx'] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'build/'),
+    filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, 'public/'),
     port: 3000,
-    publicPath: "http://localhost:3000/",
+    publicPath: 'http://localhost:3000/',
     hotOnly: true,
     disableHostCheck: true
   },
