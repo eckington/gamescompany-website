@@ -9,6 +9,7 @@ You can build it with `docker build -t imedia-r085:master .`, then run it with
 `docker run -d -p 5000:80 imedia-r085:master`. You can then access it on port 5000.
 
 ## Table of Contents
+
 - [Progress](#progress)
 - [Client Brief](#client-brief)
 - [Learning Objectives](#learning-objectives)
@@ -17,6 +18,7 @@ You can build it with `docker build -t imedia-r085:master .`, then run it with
   - [LO3](#lo3)
   - [LO4](#lo4)
   - [LO5](#lo5)
+- [Acknowledgements](#acknowledgements)
 
 ## Progress
 
@@ -29,6 +31,7 @@ See the [projects](https://github.com/eckington/youngh-imedia-r085/projects/1) p
 ## Learning Objectives
 
 ### LO1
+
 **Understand the properties and features of multipage websites**
 
 Learners must be taught:
@@ -46,6 +49,7 @@ Learners must be taught:
   - Wireless broadband (e.g. 3G, HSDPA, 3GPP, LTE)
 
 ### LO2
+
 **Be able to plan a multipage website**
 
 Learners must be taught how to:
@@ -80,19 +84,29 @@ Learners must be taught:
   whether sourced or created.
 
 ### LO3
+
 **xyz**
 
 > TODO: Add content here
 
 ### LO4
+
 **xyz**
 
 > TODO: Add content here
 
 ### LO5
+
 **xyz**
 
 > TODO: Add content here
+
+## Acknowledgements
+
+- [**React:**](https://reactjs.org) What allows us to use custom components and create the modular site.
+- [**Fuse.js:**](https://fusejs.io) Enables our 'fuzzy' searching feature
+- **[Webpack](https://webpack.js.org) and [Babel](https://babeljs.io):** Enables us to compile React's ES6/7 capabilities in a way all browsers can use.
+- [**Codesandbox:**](https://codesandbox.io) Allows me to edit & build my project from my school's computers.
 
 ## License
 

@@ -141,7 +141,7 @@ footer {
   grid-template-columns: 200px 1fr;
   grid-gap: 16px;
   padding: 48px 0;
-  border-bottom: 2px solid #aaa
+  border-bottom: 2px solid #aaa;
 }
 .articleListing:last-child {
   padding-bottom: 0;
@@ -160,14 +160,16 @@ footer {
 }
 
 /* Search Page */
-.searchPage { padding-top: 16px }
+.searchPage {
+  padding-top: 16px;
+}
 .searchPage form {
   max-width: 350px;
   margin: 0 auto;
 }
 .searchPage form input {
   padding: 16px;
-  margin-left: 11px
+  margin-left: 11px;
 }
 .searchPage form input[type="submit"] {
   border: none;
@@ -220,7 +222,7 @@ footer {
   text-transform: uppercase;
 }
 .post .content h1 .lastword {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 .post .content p {
   font-size: 14px;
@@ -232,8 +234,21 @@ footer {
   text-transform: uppercase;
 }
 
-/* Page Title Styling */
-.sm-title { position: relative; margin: 0 }
+/* Link Styling */
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+}
+a:hover {
+  color: var(--color-primary);
+}
+a:
+
+/* Page Title Styling */ .sm-title {
+  position: relative;
+  margin: 0;
+}
 .sm-title span {
   font-size: 14px;
   font-weight: bold;
@@ -260,9 +275,11 @@ footer {
     padding-top: 0;
   }
   .searchPage {
-    padding-top: 16px
+    padding-top: 16px;
   }
-  .container { padding: 1em }
+  .container {
+    padding: 1em;
+  }
 }
 @media screen and (max-width: 900px) {
   header {
@@ -296,6 +313,9 @@ footer {
   }
   .gamesList .game {
     flex-basis: 50%;
+  }
+  .articleListing {
+    display: block;
   }
 }
 
