@@ -1,5 +1,7 @@
 # Hayden Young - iMedia R085
 
+[Live site](https://imedia-r085.now.sh/#/)
+
 Create a multi-page website
 
 The project (due to CORS ruling... smh) must be run from a server. You can do this in a couple of ways.
@@ -85,21 +87,48 @@ Learners must be taught:
 
 ### LO3
 
-**xyz**
+**Be able to create multipage websites using multimedia components**
 
-> TODO: Add content here
+Learners must be taught how to:
+
+- Create suitable folder structures to organise and save web pages and asset files using appropriate naming
+  conventions
+- Source and import assets, for example: - graphics
+  - images
+  - textures
+  - sounds
+  - videos
+  - animations
+  - text
+- Create a suitable master page as a template for a multipage website
+- Use a range of tools and techniques in web authoring software to create a multipage website
+- Insert assets into web pages to create planned layouts, for example:
+  - text
+  - lists
+  - tables
+  - graphics
+  - moving images
+  - embedded content
+- Create a navigation system, for example:
+  - using a navigation bar
+  - buttons
+  - hyperlinks
+- Save a multipage website in a format appropriate to the software being used
+- Publish a multipage website to a location appropriate to client requirements.
+- Use version control when creating multipage websites.
 
 ### LO4
 
-**xyz**
+**Be able to review a multipage website**
 
-> TODO: Add content here
+Learners must be taught how to:
 
-### LO5
-
-**xyz**
-
-> TODO: Add content here
+- Review a multipage website against a specific brief
+- Identify areas for improvement and further development of a multipage website, for example:
+  - text
+  - graphics
+  - moving images
+  - embedded content
 
 ## Acknowledgements
 
