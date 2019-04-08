@@ -1,6 +1,6 @@
 # Hayden Young - iMedia R085
 
-[Live site](https://imedia-r085.now.sh/#/)
+[Live site](https://imedia-r085.netlify.com/#/)
 
 Create a multi-page website
 
@@ -19,8 +19,8 @@ You can build it with `docker build -t imedia-r085:master .`, then run it with
   - [LO2](#lo2)
   - [LO3](#lo3)
   - [LO4](#lo4)
-  - [LO5](#lo5)
 - [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Progress
 
