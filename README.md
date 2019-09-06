@@ -1,3 +1,5 @@
+> NOTE: This project is finished so I won't be updating this at all, so any security issues that crop up aren't going to be addressed by myself.
+
 # Hayden Young - iMedia R085
 
 [Live site](https://imedia-r085.netlify.com/#/)
